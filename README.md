@@ -48,6 +48,17 @@ make all         # Run both compilation and simulation
 
 ```
 
+## Test counter_apb_wrapper.sv
+
+- You can test the APB interface with `counter_apb_tb.sv` testbench using:
+
+```makefile
+make iverilog_apb    # Compile generates .vvp file
+make vpp_apb         # Run simulation
+make gtkwave_apb     # View waveform in GTKWave
+make all_apb         # Run both compilation and simulation
+```
+
 ## Results GTKWave
 
 - Result of the `counter_tb.sv` testbench:
